@@ -1,0 +1,345 @@
+:root {
+  --white: #f5f8f4;
+  --blue1: #71c3d2;
+  --blue2: #b2dde6;
+  --blue3: #002E5B;
+  --title: "Give You Glory", cursive;
+  --normaltext: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--normaltext);
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2, h3, h4{
+  color: var(--blue3);
+  font-family: var(--title);
+  font-size: 3rem;
+}
+
+header{
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+}
+
+nav {
+  padding-top: 1.2rem;
+}
+
+nav ul li{
+  display: inline-block;
+  font-size: 1.3rem;
+  color: var(--white);
+}
+
+nav ul li a{
+  color: var(--white);
+  padding-left: 1.2rem;
+}
+
+/* Hero */
+.hero {
+  background-color: black;
+  position: relative;
+}
+
+.hero img {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  opacity: 0.6;
+}
+
+.headlines {
+  position: absolute;
+  padding: 5%;
+  top: 40%;
+  left: auto;
+}
+
+.headlines h2, .headlines h3{
+  color: var(--white);
+  margin-bottom: -1rem;
+}
+
+.headlines p{
+  padding-top: 1rem;
+}
+
+/* About */
+.about {
+  padding: 3rem;
+  text-align: center;
+}
+
+.about p, .skills p {
+  padding: 1rem;
+}
+
+.background, .resume, .pj {
+font-size: 2.5rem;
+color: var(--blue2);
+padding-top: 2rem;
+}
+
+.resumebtn {
+  display: inline-block;
+  font-family: var(--title);
+  border: none;
+  padding: 2rem 3rem;
+  font-size: 1.5rem;
+  background-color: var(--white);
+}
+
+.resumebtn:hover {
+  background-color: var(--blue3);
+  color: var(--white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1.5rem;
+}
+
+.field{
+  background-color: var(--white);
+  border-radius: 1rem;
+}
+
+.field img {
+  width: 150px;
+  padding: 2rem;
+}
+
+.field h4, .skills h4 {
+  font-size: 1.5rem;
+}
+
+/* Education */
+.edu, .experience {
+  background-color: var(--blue1);
+  padding: 5rem;
+}
+
+.edu h5{
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.school {
+  font-weight: 500;
+}
+
+.term {
+  padding-top: 0.5rem;
+}
+
+/* Relevant skills */
+.skills {
+  text-align: center;
+  padding: 3rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+.fa-html5, .fa-css3, .fa-js, .fa-php, .fa-python{
+  font-size:6rem;
+  color: var(--blue3);
+}
+
+#icon1 {
+  font-size: 50px;
+  padding: 3rem 0.5rem 2rem;
+}
+
+#icon2 {
+  font-size: 100px;
+  padding: 1rem;
+}
+
+.webex {
+  position: relative;
+  height: 500px;
+}
+
+.webex img {
+  width: 18rem;
+  position: absolute;
+  padding: 0.5rem;
+}
+
+#img1 {
+  top: 0;
+  left: 1rem;
+
+}
+#img2 {
+  top: 8rem;
+  right: 1rem;
+}
+#img3 {
+  top: 16rem;
+  left: 1rem;
+}
+
+#img4 {
+  position: absolute;
+  top: 25rem;
+  right: 2rem;
+  font-size: 3rem;
+  color: var(--blue3);
+  cursor: pointer;
+}
+
+#img4:hover {
+  color: var(--blue1);
+}
+#img4:after {
+  content: "Open on GitHub!";
+  font-size: 1rem;
+  position: absolute;
+  display: none;
+  width: 15ch;
+}
+
+#img4:hover:after {
+  display: block;
+  color: var(--blue3);
+  top: 4rem;
+  left: -3rem;
+  cursor: pointer;
+}
+
+/* Relevant Experience */
+
+/* Certifications */
+.cert {
+  background-color: var(--white);
+  padding: 3rem;
+  text-align: center;
+}
+
+.cert .grid {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.cert .grid img {
+  width: 100%;
+  padding: 2rem;
+}
+
+/* Contact */
+.contact {
+  background-color: var(--blue1);
+  padding: 5rem;
+  gap:2rem;
+}
+
+.contactimg {
+  height: auto;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.contactform {
+  padding: 1rem;
+}
+
+.contact img {
+  width: 100%;
+  margin: -50px 0 -300px 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input, .form textarea {
+  margin-bottom: 1rem;
+  padding: 0.3rem 0 0.5rem 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+
+.form button{
+  width: fit-content;
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+
+/* Back to Top */
+.backtotop {
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  border: none;
+  font-size: 3rem;
+  background-color: transparent;
+  color: var(--blue3);
+}
+
+/* Footer */
+footer {
+  background-color: var(--blue3);
+  padding: 3rem 0 1rem 3rem;
+}
+
+.footer{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer h2, footer a {
+  color: var(--white);
+  font-family: var(--title);
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+
+.mid {
+  display: block;
+}
+
+.footer nav {
+  padding: 0;
+}
+
+.footer nav ul{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer nav ul li a {
+  font-family: var(--normaltext);
+  font-size: 1.2rem;
+}
+
+.copyrights {
+  text-align: center;
+  color: var(--blue1);
+  margin-top: 2rem;
+}
