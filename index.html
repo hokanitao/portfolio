@@ -13,14 +13,20 @@
 <body>
   <header>
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#edu">Education</a></li>
-        <li><a href="#cert">Certification</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div>
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menu-1"><i class="fa-solid fa-bars"></i></label>
+        <label for="menu" class="menu-2"><i class="fa-solid fa-xmark"></i></label>
+        <ul class="navcontent">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#edu">Education</a></li>
+          <li><a href="#cert">Certification</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+      </div>
     </nav>
   </header>
   <main>
@@ -108,7 +114,9 @@
               <img src="./assets/webex.svg" id="img1">
           </div>
           <div class="field">
-            <i class="fa-brands fa-php" id="icon2"></i>
+            <div>
+              <i class="fa-brands fa-php" id="icon2"></i>
+            </div>
             <h4>Backend &#0058; PHP &#40;Team PJ&#41;</h4>
             <p>As one of my first backend projects, I teamed up with two classmates to build a simple medical record management tool, just one month after I started learning PHP and MySQL.</p>
             <p>The project was inspired by my background in healthcare, and it helped me understand the basics of object-oriented programming (OOP) and how to apply those concepts in practice.</p>
@@ -163,9 +171,9 @@
         <p></p>
         <form class="form">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name" placeholder="Name">
+          <input type="text" id="name" name="name" placeholder="Your Name">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email">
+          <input type="email" id="email" name="email" placeholder="example@email.com">
           <label for="subject">Subject</label>
           <input type="text" id="subject" name="subject" placeholder="Subject">
           <label for="msg">Messages</label>
@@ -177,6 +185,7 @@
     <!-- back to top -->
     <a class="backtotop" href="#"><i class="fa-solid fa-circle-arrow-up"></i></a>
   </main>
+
   <footer>
     <div class="footer grid">
       <div>
@@ -185,8 +194,10 @@
       <div>
         <a href="#contact">Contact Me</a>
         <div class="mid">
-          <a href="https://github.com/hokanitao"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.linkedin.com/in/kaho-otani/"><i class="fa-brands fa-github"></i></a>
+          <ul>
+            <li><a href="https://github.com/hokanitao"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/kaho-otani/"><i class="fa-brands fa-github"></i></a></li>
+          </ul>
         </div>
       </div>
       <div>

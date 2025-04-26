@@ -29,7 +29,7 @@ header{
   z-index: 2;
   display: flex;
   justify-content: flex-end;
-  width: 95%;
+  width: 100%;
 }
 
 nav {
@@ -42,19 +42,27 @@ nav ul li{
   color: var(--white);
 }
 
-nav ul li:hover{
+nav ul li:hover, .mid li:hover{
   transform: translateY(-3px);
   transition: transform 0.3s linear;
 }
 
 nav ul li a{
   color: var(--white);
-  padding-left: 1.2rem;
+  padding-right: 1.2rem;
   font-family: var(--title);
 }
 
 a:hover {
   color: var(--blue2);
+}
+
+#menu, .menu-1, .menu-2{
+  display: none;
+  width: 20px;
+  vertical-align: bottom;
+  margin-right: 1rem;
+  color: var(--white);
 }
 
 /* Hero */
@@ -191,6 +199,11 @@ padding-top: 2rem;
   padding: 1rem;
 }
 
+.frontback  {
+  display: flex;
+  justify-content: center;
+}
+
 .webex, .phpex {
   display: flex;
   justify-content: end;
@@ -267,11 +280,13 @@ padding-top: 2rem;
 .contact img {
   width: 100%;
   margin: -50px 0 -300px 0;
+  border-radius: 1rem;
 }
 
 .form {
   display: flex;
   flex-direction: column;
+  height: 80%;
 }
 
 .form input, .form textarea {
@@ -279,6 +294,12 @@ padding-top: 2rem;
   padding: 0.3rem 0 0.5rem 0.5rem;
   border-radius: 0.3rem;
   border: none;
+  resize: none;
+  position: relative;
+}
+
+.form textarea{
+  height: 100%;
 }
 
 .form button{
@@ -316,8 +337,8 @@ footer h2, footer a {
   padding-right: 1rem;
 }
 
-.mid {
-  display: block;
+.mid ul{
+  display: flex;
 }
 
 .footer nav {
@@ -337,4 +358,141 @@ footer h2, footer a {
   text-align: center;
   color: var(--blue1);
   margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  h2, h3, h4 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+  /* nav */
+  .navcontent {
+    display: none;
+  }
+  .menu-1 {
+    display: block;
+  }
+  #menu:checked ~ .menu-1 {
+    display: none;
+  }
+  #menu:checked ~ .menu-2 {
+    display: inline-block;
+  }
+  .menu-right {
+    padding-top: 17px;
+  }
+  #menu:checked ~ .menu-2 {
+    position: relative;
+    z-index: 50;
+    width: 20px;
+  }
+  #menu:checked ~ .navcontent {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    z-index: 3;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: 400px;
+    width: 100%;
+    padding: 10% 5%;
+    gap: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  /* hero */
+  .hero img {
+    height: 400px;
+  }
+  .field h4, .skills h4{
+    font-size: 1.2rem;
+  }
+  /* about */
+  .field img {
+    width: 130px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1.5rem;
+  }
+  .resumebtn {
+    font-size: 1.1rem;
+  }
+  /* education */
+  .edu h5 {
+    padding: 0.9rem 0;
+  }
+  /* skills */
+  .flex {
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    overflow: scroll;
+  }
+  .fa-html5, .fa-css3, .fa-js, .fa-php, .fa-python{
+    font-size:4rem;
+  }
+  #icon1 {
+    font-size: 45px;
+    padding: 2rem 0.5rem 2rem;
+  }
+  #icon2 {
+    font-size: 80px;
+    padding: 1rem;
+  }
+  .background, .resume, .pj {
+    font-size: 1.5rem;
+  }
+  /* certification */
+  .cert .grid img {
+    padding: 0;
+  }
+  figcaption {
+    font-size: 0.8rem;
+  }
+  /* contact */
+  .contactimg{
+    text-align: center;
+  }
+  .contact img {
+    width: 70%;
+    margin: -30px 0 -100px 0;
+    border-radius: 1rem;
+  }
+  .contactform {
+    padding: 0;
+  }
+  .contactform h2 {
+    font-size: 2.5rem;
+  }
+  /* footer */
+  footer {
+    padding: 3rem;
+  }
+  footer h2, footer a {
+    font-size: 1.5rem;
+  }
+  footer nav ul li a{
+    padding-left: 0; 
+  }
+}
+
+@media (max-width: 425px) {
+  /* about */
+  .about, .edu, .skills, .experience, .cert, .contact {
+    padding: 2rem;
+  }
+  .resumebtn {
+    padding: 1rem 1rem;
+  }
+  /* skills */
+  .fa-html5, .fa-css3, .fa-js, .fa-php, .fa-python {
+    font-size: 3rem;
+  }
+  #git {
+    font-size: 2.5rem;
+  }
 }
