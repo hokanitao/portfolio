@@ -42,9 +42,19 @@ nav ul li{
   color: var(--white);
 }
 
+nav ul li:hover{
+  transform: translateY(-3px);
+  transition: transform 0.3s linear;
+}
+
 nav ul li a{
   color: var(--white);
   padding-left: 1.2rem;
+  font-family: var(--title);
+}
+
+a:hover {
+  color: var(--blue2);
 }
 
 /* Hero */
@@ -119,6 +129,7 @@ padding-top: 2rem;
 .field{
   background-color: var(--white);
   border-radius: 1rem;
+  position: relative;
 }
 
 .field img {
@@ -180,44 +191,29 @@ padding-top: 2rem;
   padding: 1rem;
 }
 
-.webex {
-  position: relative;
-  height: 500px;
-}
-
-.webex img {
-  width: 18rem;
-  position: absolute;
-  padding: 0.5rem;
+.webex, .phpex {
+  display: flex;
+  justify-content: end;
 }
 
 #img1 {
-  top: 0;
-  left: 1rem;
-
-}
-#img2 {
-  top: 8rem;
-  right: 1rem;
-}
-#img3 {
-  top: 16rem;
-  left: 1rem;
+  width: 100%;
 }
 
-#img4 {
+#git {
   position: absolute;
-  top: 25rem;
-  right: 2rem;
+  padding-right: 2rem;
+  justify-content: end;
   font-size: 3rem;
   color: var(--blue3);
   cursor: pointer;
 }
 
-#img4:hover {
+#git:hover {
   color: var(--blue1);
 }
-#img4:after {
+
+#git:after {
   content: "Open on GitHub!";
   font-size: 1rem;
   position: absolute;
@@ -225,11 +221,11 @@ padding-top: 2rem;
   width: 15ch;
 }
 
-#img4:hover:after {
+#git:hover:after {
   display: block;
   color: var(--blue3);
-  top: 4rem;
-  left: -3rem;
+  top: 0;
+  right: 5rem;
   cursor: pointer;
 }
 
@@ -334,7 +330,6 @@ footer h2, footer a {
 }
 
 .footer nav ul li a {
-  font-family: var(--normaltext);
   font-size: 1.2rem;
 }
 
