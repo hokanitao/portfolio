@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $body = "Name: $name \n Email: $email \n Subject: $subject \n Message: $msg";
 
   if (mail($to, $subject, $body, $headers)) {
-    $message = "Your request was sent!";
+    $message = "Your message was sent!";
   } else {
     $code = $e->getCode();
     $error = $e->getMessage();
@@ -27,13 +27,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./contact.css">
+  <link href="https://fonts.googleapis.com/css2?family=Give+You+Glory&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Submittion Complete</title>
 </head>
 
 <body>
   <h1>Thank you for reaching out!</h1>
   <p><?php echo $message; ?></p>
-  <a href="index.html">Back to Home</a>
+  <a href="index.html" class="button">Back to Home</a>
 </body>
 
 </html>

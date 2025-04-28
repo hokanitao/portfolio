@@ -1,0 +1,93 @@
+:root {
+  --white: #f5f8f4;
+  --blue1: #71c3d2;
+  --blue2: #b2dde6;
+  --blue3: #002E5B;
+  --title: "Give You Glory", cursive;
+  --normaltext: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-family: var(--normaltext);
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  padding: 5rem;
+  background-color: var(--blue1);
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--title);
+  font-size: 3rem;
+}
+
+table {
+  margin: 0 auto;
+  border-spacing: 1em 0.5em;
+  width: 80%;
+}
+
+.title {
+  text-align: right;
+  width: 25%;
+  background-color: var(--blue1);
+}
+
+td {
+  padding: 0.3rem 0 0.5rem 0.5rem;
+  text-align: left;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.button {
+  border-radius: 0.3rem;
+  margin: 1rem;
+  display: inline-block;
+  font-family: var(--title);
+  border: none;
+  padding: 0.1rem 1.5rem 0;
+  font-size: 1.5rem;
+  background-color: var(--white);
+}
+
+.button:hover {
+  background-color: var(--blue3);
+  color: var(--white);
+}
+
+p {
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 3rem 2rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  td {
+    font-size: 0.9rem;
+  }
+  .button {
+    font-size: 1.1rem;
+  }
+  table {
+    margin: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    padding: 3rem 1rem;
+  }
+}
