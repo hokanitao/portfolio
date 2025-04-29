@@ -155,7 +155,7 @@ padding-top: 2rem;
   padding: 5rem;
 }
 
-.edu h5{
+h5{
   font-size: 1.3rem;
   font-weight: 700;
   padding-top: 1rem;
@@ -167,7 +167,7 @@ padding-top: 2rem;
 }
 
 .term {
-  padding-top: 0.5rem;
+  padding: 0.5rem 0;
 }
 
 /* Relevant skills */
@@ -243,6 +243,13 @@ padding-top: 2rem;
 }
 
 /* Relevant Experience */
+.experience {
+  grid-template-columns: 1fr 2fr;
+}
+
+.pm {
+  margin-bottom: 1rem;
+}
 
 /* Certifications */
 .cert {
@@ -422,7 +429,7 @@ footer h2, footer a {
     font-size: 1.1rem;
   }
   /* education */
-  .edu h5 {
+  h5 {
     padding: 0.9rem 0;
   }
   /* skills */
