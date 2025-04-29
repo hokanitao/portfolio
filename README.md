@@ -54,12 +54,12 @@ This site was built as a part of my personal development journey.
 ## 🔧 How to Use
 
 1. Clone this repository  
-   `git clone https://github.com/hokanitao/your-repo-name.git`
+   `git clone https://github.com/hokanitao/portfolio.git`
 
-2. Open `index.html` in your browser  
+3. Open `index.html` in your browser  
    or host it using [GitHub Pages](https://pages.github.com/) or your preferred hosting service.
 
-3. Make sure assets and CSS are in the correct paths if you restructure anything!
+4. Make sure assets and CSS are in the correct paths if you restructure anything!
 
 ## 📝 Future Improvements
 
