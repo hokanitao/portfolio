@@ -66,20 +66,30 @@ a:hover {
 }
 
 /* Hero */
-.hero {
+/* .hero {
   background-color: black;
+  position: relative;
+} */
+
+.hero {
+  background-image: url('../assets/background.webp');
+  background-size: cover;
+  background-position: center 70%;
+  background-attachment: fixed;
+  height: 500px;
   position: relative;
 }
 
-.hero img {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  vertical-align: top;
+/* Overlay（black layer） */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 500px;
-  object-fit: cover;
-  opacity: 0.6;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* 黒 + 透過 */
+  z-index: 1;
 }
 
 .headlines {
@@ -87,6 +97,7 @@ a:hover {
   padding: 5%;
   top: 40%;
   left: auto;
+  z-index: 3;
 }
 
 .headlines h2, .headlines h3{
@@ -182,22 +193,21 @@ h5{
   background-color: var(--white);
   padding: 2rem;
   border-radius: 1rem;
-  overflow: scroll;
-  gap: 1rem;
 }
 
-.icons{
-  width: 6rem;
+.fa-html5, .fa-css3, .fa-js, .fa-php, .fa-python{
+  font-size:6rem;
+  color: var(--blue3);
 }
 
 #icon1 {
-  width: 6rem;
+  font-size: 50px;
   padding: 3rem 0.5rem 2rem;
 }
 
 #icon2 {
-  width: 9rem;
-  padding: 1rem 0.5rem 1rem;
+  font-size: 100px;
+  padding: 1rem;
 }
 
 .frontback  {
@@ -411,7 +421,7 @@ footer h2, footer a {
     background-color: rgba(0, 0, 0, 0.3);
   }
   /* hero */
-  .hero img {
+  .hero {
     height: 400px;
   }
   .field h4, .skills h4{
@@ -434,8 +444,14 @@ footer h2, footer a {
     padding: 0.9rem 0;
   }
   /* skills */
-  .icons{
-    width: 4rem;
+  .flex {
+    padding: 2rem;
+    border-radius: 1rem;
+    gap: 1rem;
+    overflow: scroll;
+  }
+  .fa-html5, .fa-css3, .fa-js, .fa-php, .fa-python{
+    font-size:4rem;
   }
   #icon1 {
     font-size: 45px;
@@ -491,8 +507,8 @@ footer h2, footer a {
     padding: 1rem 1rem;
   }
   /* skills */
-  .icons{
-    width: 3rem;
+  .fa-html5, .fa-css3, .fa-js, .fa-php, .fa-python {
+    font-size: 3rem;
   }
   #git {
     font-size: 2.5rem;
