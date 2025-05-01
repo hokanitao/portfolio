@@ -24,8 +24,9 @@ h2, h3, h4{
   font-size: 3rem;
 }
 
-header{
-  position: absolute;
+.hero{
+  position: sticky;
+  top: 0;
   z-index: 2;
   display: flex;
   justify-content: flex-end;
@@ -66,22 +67,17 @@ a:hover {
 }
 
 /* Hero */
-/* .hero {
-  background-color: black;
-  position: relative;
-} */
-
-.hero {
+header {
   background-image: url('../assets/background.webp');
   background-size: cover;
   background-position: center 70%;
   background-attachment: fixed;
-  height: 500px;
+  height: 100vh;
   position: relative;
 }
 
 /* Overlay（black layer） */
-.hero::before {
+header::before {
   content: '';
   position: absolute;
   top: 0;
@@ -97,7 +93,7 @@ a:hover {
   padding: 5%;
   top: 40%;
   left: auto;
-  z-index: 3;
+  z-index: 1;
 }
 
 .headlines h2, .headlines h3{
@@ -410,20 +406,17 @@ footer h2, footer a {
     display: flex;
     flex-direction: column;
     align-items: end;
-    z-index: 3;
+    z-index: 10;
     position: absolute;
     top: 0px;
     right: 0;
-    height: 400px;
+    height: 100vh;
     width: 100%;
     padding: 10% 5%;
     gap: 1rem;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
   }
   /* hero */
-  .hero {
-    height: 400px;
-  }
   .field h4, .skills h4{
     font-size: 1.2rem;
   }
