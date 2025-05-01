@@ -189,21 +189,22 @@ h5{
   background-color: var(--white);
   padding: 2rem;
   border-radius: 1rem;
+  overflow: scroll;
+  gap: 1rem;
 }
 
-.fa-html5, .fa-css3, .fa-js, .fa-php, .fa-python{
-  font-size:6rem;
-  color: var(--blue3);
+.icons {
+  width: 6rem;
 }
 
 #icon1 {
-  font-size: 50px;
+  width: 6rem;
   padding: 3rem 0.5rem 2rem;
 }
 
 #icon2 {
-  font-size: 100px;
-  padding: 1rem;
+  width: 9rem;
+  padding: 1rem 0.5rem 1rem;
 }
 
 .frontback  {
@@ -443,8 +444,8 @@ footer h2, footer a {
     gap: 1rem;
     overflow: scroll;
   }
-  .fa-html5, .fa-css3, .fa-js, .fa-php, .fa-python{
-    font-size:4rem;
+  .icons{
+    width: 4rem;
   }
   #icon1 {
     width: 5rem;
@@ -499,8 +500,8 @@ footer h2, footer a {
     padding: 1rem 1rem;
   }
   /* skills */
-  .fa-html5, .fa-css3, .fa-js, .fa-php, .fa-python {
-    font-size: 3rem;
+  .icons{
+    width: 3rem;
   }
   #icon1 {
     width: 4rem;
