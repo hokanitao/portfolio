@@ -68,9 +68,6 @@ This site was built as a part of my personal development journey.
 - Add animations with JavaScript or libraries like GSAP
 - Integrate form submissions with backend (PHP/MySQL or Firebase)
 
-## 🌐 Live Demo
-
-(If hosted) 👉 [View the site here](https://your-github-username.github.io/your-repo-name/)
 
 ## 📫 Contact
 
