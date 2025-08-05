@@ -13,8 +13,8 @@ This site was built as a part of my personal development journey.
 
 ## 🛠️ Technologies Used
 
-- **Frontend**: HTML5, CSS3, Tailwind CSS, Bootstrap
-- **Backend**: PHP (basic), MySQL
+- **Frontend**: HTML5, CSS3
+- **Backend**: PHP, MySQL
 - **Tools**: Git, GitHub
 - **Design**: Responsive layout, Google Fonts, Font Awesome
 - **Other**: Contact form with PHP, GitHub Pages-ready structure
@@ -28,15 +28,13 @@ This site was built as a part of my personal development journey.
 
 ┣ 📂 css/              # Stylesheets (e.g. main.css)
 
-┣ 📄 index.html        # Main HTML file
-
-┣ css/               # Stylesheets
-
 ┃   ┣ contact.css    # Styles for the contact form
 
 ┃   ┗ main.css       # General styles for the site
 
-┣ php/               # PHP scripts (for contact form)
+┣ 📄 index.html        # Main HTML file
+
+┣ 📂 php/               # PHP scripts (for contact form)
 
 ┃   ┣ confirm.php    # Form confirmation page
 
@@ -63,9 +61,8 @@ This site was built as a part of my personal development journey.
 
 ## 📝 Future Improvements
 
-- Add dark mode toggle
-- Expand personal projects with JavaScript or full-stack examples
-- Add animations with JavaScript or libraries like GSAP
+- Expand personal projects with JavaScript/React or full-stack examples
+- Explore advanced animations by learning GSAP to add interactive elements and improve UI dynamics
 - Integrate form submissions with backend (PHP/MySQL or Firebase)
 
 
